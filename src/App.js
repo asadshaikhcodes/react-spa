@@ -160,48 +160,53 @@ function App() {
                   <Col>{searchbarExpanded && <Input size="small" />}</Col>
                 </Row>
               </Col>
-              <Col>
-                <Divider type="vertical" />
-              </Col>
-              <Col>
-                <QuestionCircleOutlined style={{ color: "#fff" }} />
-              </Col>
-              <Col>
-                <Divider type="vertical" />
-              </Col>
-              <Col>
-                <Dropdown
-                  overlay={<NotificationOverlay />}
-                  overlayStyle={{
-                    width: "400px",
-                  }}
-                  trigger="click"
-                  arrow
-                >
-                  <Badge
-                    color="red"
-                    count="11"
-                    size="small"
-                    style={{ lineHeight: "initial" }}
+              <Row justify="space-around" align="center">
+                <Col>
+                  <Divider type="vertical" />
+                </Col>
+                <Col>
+                  <QuestionCircleOutlined style={{ color: "#fff" }} />
+                </Col>
+                <Col>
+                  <Divider type="vertical" />
+                </Col>
+                <Col>
+                  <Dropdown
+                    overlay={<NotificationOverlay />}
+                    overlayStyle={{
+                      width: "400px",
+                    }}
+                    trigger="click"
+                    arrow
                   >
-                    <BellOutlined style={{ color: "#fff" }} />
-                  </Badge>
-                </Dropdown>
-              </Col>
-              <Col>
-                <Divider type="vertical" />
-              </Col>
-              <Col>
-                <Avatar src="" size="small" />
-              </Col>
-              <Col>
-                <Divider type="vertical" />
-              </Col>
-              <Col>
-                <Typography.Text style={{ color: "#fff" }}>
-                  User Name
-                </Typography.Text>
-              </Col>
+                    <Badge
+                      color="red"
+                      count="11"
+                      size="small"
+                      style={{ lineHeight: "initial" }}
+                    >
+                      <BellOutlined style={{ color: "#fff" }} />
+                    </Badge>
+                  </Dropdown>
+                </Col>
+                <Col>
+                  <Divider type="vertical" />
+                </Col>
+                <Col>
+                  <Avatar
+                    src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads02&accessoriesType=Blank&hairColor=BrownDark&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=PastelBlue&eyeType=Surprised&eyebrowType=RaisedExcitedNatural&mouthType=Default&skinColor=Pale"
+                    size="small"
+                  />
+                </Col>
+                <Col>
+                  <Divider type="vertical" />
+                </Col>
+                <Col>
+                  <Typography.Text style={{ color: "#fff" }}>
+                    User Name
+                  </Typography.Text>
+                </Col>
+              </Row>
             </Row>
           </Col>
         </Row>
@@ -262,7 +267,7 @@ function App() {
           </Routes>
           <Layout>
             <Footer>
-              Ant Design Pro Demo ©2022 Created by Hurain Infotech
+              React Single Page App &#169;{new Date().getFullYear()} Created by Asad Shaikh
             </Footer>
           </Layout>
         </Content>
